@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap'); /*    Montserrat   */
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap'); /*    Fraunces    */
+
+:root {
+    --Dark-cyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);  /*    primary    */
+
+    --Very-dark-blue: hsl(212, 21%, 14%);
+    --Dark-grayish-blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%); /*   secondary   */
+
+    font-size: clamp(1rem, 0.75rem + 1.5vw, 2rem);
+
+    --Weights-500: 500;
+    --Weights-700: 700;
+    font-size: 28px;
+}
+
+html {
+    margin: 0;
+    background-color: var(--Cream);
+    font-family: Mountserrat, sans-serif;
+    font-weight: 500;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.Fraunces {
+    font-family: Fraunces, sans-serif;
+}
+
+.card * {
+    margin-bottom: 1em;
+}
+
+.card {
+    width: 576px;
+    overflow: hidden;
+    display: flex;
+    border-radius: 0.4rem;
+    background-color: var(--White);
+    margin: 5rem auto 0 auto;
+}
+
+.child_card {
+    margin-bottom: 0;
+    width: 100%;
+}
+
+.card img {
+    max-inline-size: 50%;
+    block-size: auto;
+    margin-bottom: 0;
+}
+
+.indes {
+    padding: 1em;
+    margin-bottom: 0;
+}
+
+.gray {
+    opacity: 0.5;
+    font-weight: 500;
+}
+
+.product {
+    font-size: 0.4rem;
+    letter-spacing: 0.2rem;
+}
+
+h1 {
+    font-size: 1rem;
+}
+
+.short_descr {
+    font-size: 0.6rem;
+    margin-bottom: 1rem;
+}
+
+.prices * {
+    display: inline-block;
+    margin-bottom: 0;
+}
+
+.new_price {
+    color: var(--Dark-cyan);
+    margin-right: 0.5rem;
+}
+
+.old_price {
+    font-size: 0.5em;
+    text-decoration: line-through;
+    text-decoration-color: rgba(0, 0, 0, 0.5);
+}
+
+.button {
+    background-color: var(--Dark-cyan);
+    border-radius: 0.25em;
+    margin-bottom: 0;
+
+    transition-property: background-color;
+    transition-duration: 10ms;
+    transition-delay: 1ms;
+}
+
+.inner {
+    padding: 0.5em;
+    text-align: center;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.button img{
+    width: 0.5em;
+    margin-right: 0.5em;
+    margin-bottom: 0;
+}
+
+.buy_button {
+    margin-bottom: 0;
+    color: var(--White);
+    font-weight: var(--Weights-500);
+    font-size: 0.5rem;
+    margin-bottom: 0; 
+}
+
+.button:hover {
+    background-color: var(--Very-dark-blue);
+}
+
+footer .attribution {
+    font-size: 0.5rem; 
+    text-align: center;
+}
+
+.attribution a{
+    font-size: 0.5rem;  /* previous '''footer .attribution {font-size: 0.5rem; }''' doesn't include '<a></a>'. How to do that?*/
+}
+
+@media (max-width: 600px) {
+    .card {
+        width: 90%;
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+
+    :root {
+        font-size: 2rem;
+    }
+
+    .card * {
+        margin-bottom: 0.5em;
+    }
+
+    .child_card,
+    .indes,
+    .button,
+    .buy_button,
+    .inner {
+        margin-bottom: 0;
+    }
+
+    .card img {
+        max-inline-size: 100%;
+    }
+}
