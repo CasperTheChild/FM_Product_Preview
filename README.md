@@ -30,7 +30,7 @@ Users should be able to:
 
 ![](./design/desktop-design.jpg)
 ![](./design/active-states.jpg)
-![](./design/desktop-preview.jpg)
+![](./design/mobile-design.jpg)
 
 ### Links
 
